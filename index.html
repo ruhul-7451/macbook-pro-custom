@@ -5,11 +5,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mac Store</title>
+    <title>iMac Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <h1>Welcome to Mac Store</h1>
+    <header></header>
+    <main class="container">
+        <section class="row row-cols-1 row-cols-md-2 g-4 mt-5">
+            <div class="col text-center">
+                <img class="img-fluid w-75" src="/images/mac.png" alt="picture of a new I-mac">
+            </div>
+
+            <!-- Heading and Short Description - Starts here -->
+            <div class="col">
+                <div>
+                    <h1>Say hello to the new iMac.</h1>
+                </div>
+                <article>Inspired by the best of Apple. Transformed by the M1 chip. Stands out in any space. Fits
+                    perfectly into your life. This extraordinary design is only possible thanks to M1, the first
+                    system
+                    on a chip for Mac. It makes iMac so thin and compact that it fits in more places than ever. M1
+                    integrates the processor, graphics, memory, and more onto a single chip. That let us put an
+                    entire
+                    computer into a space so small it practically disappears.
+                </article>
+
+                <!-- Heading and Short Description - Ends here -->
+
+                <!-- Selecting Configuration Buttons - Starts here -->
+                <div class="mt-5">
+                    <h2 class="fs-5 fw-bold">Memory</h2>
+                    <button class="btn btn-outline-dark">8GB Unified Memory</button>
+                    <button class="btn btn-outline-dark">16GB Unified Memory</button>
+                </div>
+                <div class="mt-5">
+                    <h2 class="fs-5 fw-bold">Storage</h2>
+                    <button class="btn btn-outline-dark">256GB SSD Storage</button>
+                    <button class="btn btn-outline-dark">512GB SSD Storage</button>
+                    <button class="btn btn-outline-dark">1TB SSD Storage</button>
+                </div>
+                <div class="mt-5">
+                    <h2 class="fs-5 fw-bold">Choose Your Delivery Option</h2>
+                    <button class="btn btn-outline-dark">Friday, Sep 03 Free Prime Delivery</button>
+                    <button class="btn btn-outline-dark">Friday, Aug 25 Delivery Charge $20</button>
+                </div>
+                <!-- Selecting Configuration Buttons - Ends here -->
+
+                <!-- Custom Price Modification - Starts here -->
+                <div class="row-cols-2 my-5">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="fs-5 fw-bold">Best Price</h2>
+                        <h2 class="fs-5 fw-bold">$1299</h2>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <h2 class="fs-5 fw-bold">Extra Memory Cost</h2>
+                        <h2 class="fs-5 fw-bold">$0</h2>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <h2 class="fs-5 fw-bold">Extra Storage Cost</h2>
+                        <h2 class="fs-5 fw-bold">$0</h2>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <h2 class="fs-5 fw-bold">Delivery Charge</h2>
+                        <h2 class="fs-5 fw-bold">$0</h2>
+                    </div>
+                    <hr class="bg-dark fw-bolder">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="fs-5 fw-bold">Total</h2>
+                        <h2 class="fs-5 fw-bold">$1299</h2>
+                    </div>
+                    <hr>
+                    <!-- Custom Price Modification - Ends here -->
+
+                    <!-- Coupon Part - Starts here -->
+                    <div class="mt-5">
+                        <h2 class="fs-5 fw-bold">Apply Coupon</h2>
+                        <div class="d-flex justify-content-between">
+                            <input class="p-2 rounded border-1" type="text" name="" id=""
+                                placeholder="Enter your coupon code" size="25">
+                            <button type="submit" class="btn btn-danger">Apply</button>
+                        </div>
+                    </div>
+                    <!-- Coupon Part - Ends here -->
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="d-flex justify-content-center">
+            <h3>Total Price: $<span>1299</span></h3>
+
+        </section>
+
+    </main>
+    <footer class="bg-dark p-5 mt-5">
+        <h4 class="text-white text-center fs-6 fw-normal">&copy; 2021 - Md. Ruhul Amin Khan</h4>
+    </footer>
+
+    <!-- JS file linked below -->
+    <script src="/js/script.js"></script>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
