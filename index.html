@@ -40,19 +40,20 @@
                 <!-- Selecting Configuration Buttons - Starts here -->
                 <div class="mt-5">
                     <h2 class="fs-5 fw-bold">Memory</h2>
-                    <button class="btn btn-outline-dark">8GB Unified Memory</button>
-                    <button class="btn btn-outline-dark">16GB Unified Memory</button>
+                    <button id="memory-optn-8gb" class="btn btn-outline-dark">8GB Unified Memory</button>
+                    <button id="memory-optn-16gb" class="btn btn-outline-dark">16GB Unified Memory</button>
                 </div>
                 <div class="mt-5">
                     <h2 class="fs-5 fw-bold">Storage</h2>
-                    <button class="btn btn-outline-dark">256GB SSD Storage</button>
-                    <button class="btn btn-outline-dark">512GB SSD Storage</button>
-                    <button class="btn btn-outline-dark">1TB SSD Storage</button>
+                    <button id="storage-optn-256gb" class="btn btn-outline-dark">256GB SSD Storage</button>
+                    <button id="storage-optn-512gb" class="btn btn-outline-dark">512GB SSD Storage</button>
+                    <button id="storage-optn-1tb" class="btn btn-outline-dark">1TB SSD Storage</button>
                 </div>
                 <div class="mt-5">
                     <h2 class="fs-5 fw-bold">Choose Your Delivery Option</h2>
-                    <button class="btn btn-outline-dark">Friday, Sep 03 Free Prime Delivery</button>
-                    <button class="btn btn-outline-dark">Friday, Aug 25 Delivery Charge $20</button>
+                    <button id="free-delivery" class="btn btn-outline-dark">Friday, Sep 03 Free Prime
+                        Delivery</button>
+                    <button id="paid-delivery" class="btn btn-outline-dark">Friday, Aug 25 Delivery Charge $20</button>
                 </div>
                 <!-- Selecting Configuration Buttons - Ends here -->
 
@@ -60,27 +61,27 @@
                 <div class="row-cols-2 my-5">
                     <div class="d-flex justify-content-between">
                         <h2 class="fs-5 fw-bold">Best Price</h2>
-                        <h2 class="fs-5 fw-bold">$1299</h2>
+                        <h2 class="fs-5 fw-bold">$<span id="base-price">1299</span></h2>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <h2 class="fs-5 fw-bold">Extra Memory Cost</h2>
-                        <h2 class="fs-5 fw-bold">$0</h2>
+                        <h2 class="fs-5 fw-bold">$<span id="extra-memory-cost">0</span></h2>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <h2 class="fs-5 fw-bold">Extra Storage Cost</h2>
-                        <h2 class="fs-5 fw-bold">$0</h2>
+                        <h2 class="fs-5 fw-bold">$<span id="extra-storage-cost">0</span></h2>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <h2 class="fs-5 fw-bold">Delivery Charge</h2>
-                        <h2 class="fs-5 fw-bold">$0</h2>
+                        <h2 class="fs-5 fw-bold">$<span id="delivery-charge">0</span></h2>
                     </div>
                     <hr class="bg-dark fw-bolder">
                     <div class="d-flex justify-content-between">
                         <h2 class="fs-5 fw-bold">Total</h2>
-                        <h2 class="fs-5 fw-bold">$1299</h2>
+                        <h2 class="fs-5 fw-bold">$<span id="sub-total-cost">0</span></h2>
                     </div>
                     <hr>
                     <!-- Custom Price Modification - Ends here -->
@@ -89,9 +90,9 @@
                     <div class="mt-5">
                         <h2 class="fs-5 fw-bold">Apply Coupon</h2>
                         <div class="d-flex justify-content-between">
-                            <input class="p-2 rounded border-1" type="text" name="" id=""
+                            <input id="coupon-code" class="p-1 rounded border-1" type="text" name=""
                                 placeholder="Enter your coupon code" size="25">
-                            <button type="submit" class="btn btn-danger">Apply</button>
+                            <button id="apply-coupon" type="submit" class="btn btn-danger">Apply</button>
                         </div>
                     </div>
                     <!-- Coupon Part - Ends here -->
@@ -100,7 +101,7 @@
         </section>
         <hr>
         <section class="d-flex justify-content-center">
-            <h3>Total Price: $<span>1299</span></h3>
+            <h3>Total Price: $<span id="total-cost">1299</span></h3>
         </section>
 
     </main>
